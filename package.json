@@ -1,0 +1,24 @@
+{
+  "name": "bit-queue",
+  "description": "bitcoin-hackathon project",
+  "author": {
+    "name": "tres amigos"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node app/server.js"
+  },
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abMatGit/bitcoin-hackathon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abMatGit/bitcoin-hackathon/issues"
+  },
+  "dependencies": {
+    "kue": "~0.6.2"
+  },
+  "devDependencies": {},
+  "readmeFilename": "README.md"
+}

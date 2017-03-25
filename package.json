@@ -17,7 +17,7 @@
     "url": "https://github.com/abMatGit/bitcoin-hackathon/issues"
   },
   "dependencies": {
-    "kue": "~0.6.2"
+    "kue": "^0.11.5"
   },
   "devDependencies": {},
   "readmeFilename": "README.md"

@@ -16,6 +16,10 @@ class BitQueueElement {
     return Date.now() - this.timestamp
   }
 
+  shouldPlay() {
+    return this.score() > 10000;
+  }
+
   score() {
     return (this.paid_worth * 1000);// + (this.timeWaiting() * this.timeWaiting());
   }

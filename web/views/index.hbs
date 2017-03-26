@@ -4,16 +4,33 @@
 
   <div class="col-sm-9">
     <h2>Black market bids</h2>
-    <ul>
     {{#each bids}}
-    <li>{{score}} - {{value}} {{paid_worth}}
-      <form action="/bids/{{value}}" method="post">
-        <input type="text" name="bidWorth" id="bitWorth" value="" />
-        <input type="submit" name="submitBidWorth" id="" value="Place Bid" />
-      </form>
-    </li>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>
+              {{score}}
+            </h1>
+
+            <p>
+            {{value}}{{paid_worth}}
+            </p>
+
+            <form action="/bids/{{value}}" method="post">
+              <input type="text" name="bidWorth" id="bitWorth" value="" />
+              <input type="submit" name="submitBidWorth" id="" value="Place Bid" />
+            </form>
+          </div>
+          <div class="col-sm-6">
+            {{#if shouldPlay}}
+              <iframe src="https://www.youtube.com/embed/{{value}}" frameborder="0" allowfullscreen></iframe>
+            {{/if}}
+          </div>
+        </div>
+      </div>
+    </div>
     {{/each}}
-    </ul>
   </div>
   <div class="col-sm-3">
     <h2>Bid</h2>

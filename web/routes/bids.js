@@ -10,4 +10,15 @@ router.post('/', function(req, res, next) {
     res.redirect('/');
 });
 
+router.post('/:value', function(req, res, next) {
+    console.log(req.body);
+    console.log(req.params);
+    var element = queue.queue.find(function(el) {
+        return el.value == req.params.value
+    });
+
+    element.addWorth(parseInt(req.body.bidWorth));
+    res.redirect('/');
+});
+
 module.exports = router;

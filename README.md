@@ -2,7 +2,7 @@
 
 ## Setup
 
-Setup bcoin by following the steps on their [bcoin git repo] [bcoin_repo]
+Setup bcoin by following the steps on their [bcoin git repo][bcoin_repo]
 
 Install redis, [more info here][redis_post]
 ```

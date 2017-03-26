@@ -16,9 +16,7 @@
   "bugs": {
     "url": "https://github.com/abMatGit/bitcoin-hackathon/issues"
   },
-  "dependencies": {
-    "kue": "^0.11.5"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "readmeFilename": "README.md"
 }

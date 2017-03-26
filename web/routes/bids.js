@@ -1,15 +1,13 @@
 var express = require('express');
 var router = express.Router();
+
 var queue = require('../server');
 var BitQueueElement = require('../bit_queue_element');
 
-var elem = new BitQueueElement(queue, 'new item', 1);
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-    res.render('index', {
-        bids: queue.queue
-    });
+/* GET users listing. */
+router.post('/', function(req, res, next) {
+    new BitQueueElement(queue, req.body.bidName, 1);
+    res.redirect('/');
 });
 
 module.exports = router;

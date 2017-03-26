@@ -1,7 +1,7 @@
 'use strict'
 
-var BitQueue = require('./queue');
+var BitQueue = require('./bit_queue');
 var BitQueueElement = require('./bit_queue_element');
+var queue = new BitQueue([]);
 
-var q = new BitQueue([]);
-var elem = new BitQueueElement(q, 'new item', 1);
+module.exports = queue

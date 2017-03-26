@@ -5,16 +5,15 @@
   <div class="col-sm-9">
     <h2>Black market bids</h2>
     <ul>
-      <li>Play foo figthers</li>
-      <li>Play nirvana</li>
-      <li>Chop heads</li>
-      <li>Kill a president</li>
+    {{#each bids}}
+    <li>{{value}}, {{score}}</li>
+    {{/each}}
     </ul>
   </div>
   <div class="col-sm-3">
     <h2>Bid</h2>
-    <form action="/" method="post">
-      <input type="text" name="foo" id="bar" value="asdf" />
+    <form action="/bids" method="post">
+      <input type="text" name="bidName" id="bidName" value="" />
       <input type="submit" name="submit" id="ijd" value="create" />
     </form>
   </div>

@@ -6,7 +6,7 @@
     <h2>Black market bids</h2>
     <ul>
     {{#each bids}}
-    <li>{{value}} {{paid_worth}}
+    <li>{{score}} - {{value}} {{paid_worth}}
       <form action="/bids/{{value}}" method="post">
         <input type="text" name="bidWorth" id="bitWorth" value="" />
         <input type="submit" name="submitBidWorth" id="" value="Place Bid" />

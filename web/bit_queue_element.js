@@ -17,7 +17,7 @@ class BitQueueElement {
   }
 
   score() {
-    return (this.paid_worth * 1000) + (this.timeWaiting() * this.timeWaiting());
+    return (this.paid_worth * 1000);// + (this.timeWaiting() * this.timeWaiting());
   }
 }
 

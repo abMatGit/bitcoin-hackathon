@@ -4,7 +4,7 @@ var queue = require('../server');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    var q = queue.queue.slice()
+    var q = queue.state().slice()
     res.render('index', {
         bids: q.reverse()
     });

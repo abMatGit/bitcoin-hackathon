@@ -6,7 +6,7 @@
   },
   "main": "server.js",
   "scripts": {
-    "start": "node app/server.js"
+    "start": "node app/index.js"
   },
   "version": "0.0.1",
   "repository": {
